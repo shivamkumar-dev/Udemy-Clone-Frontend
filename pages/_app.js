@@ -1,5 +1,4 @@
 import React from 'react';
-React.useLayoutEffect = React.useEffect;
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'antd/dist/antd.css';
 import '../public/css/styles.css';
