@@ -14,14 +14,11 @@ const Register = () => {
 
     try {
       setLoading(true);
-      const { data } = await axios.post(
-        'http://127.0.0.1:8000/api/v1/register',
-        {
-          name,
-          email,
-          password,
-        }
-      );
+      const { data } = await axios.post(`/api/v1/register`, {
+        name,
+        email,
+        password,
+      });
       toast.success('Registration successful. Please login.');
       setLoading(false);
     } catch (err) {
